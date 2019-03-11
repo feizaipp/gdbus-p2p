@@ -1,0 +1,7 @@
+[D-BUS Service]
+Name=org.freedesktop.Gdbusp2p
+Exec=@gdbusp2pprivdir@/gdbusp2pd
+User=root
+SystemdService=gdbusp2p.service
+StandardOutput=syslog
+StandardError=syslog

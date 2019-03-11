@@ -1,0 +1,11 @@
+[Unit]
+Description=gdbus p2p service
+
+[Service]
+#Type=dbus
+#BusName=org.freedesktop.Gdbusp2p
+ExecStart=@gdbusp2pprivdir@/gdbusp2pd
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
